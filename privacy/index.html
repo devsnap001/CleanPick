@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CleanPick Privacy Policy</title>
-  <link rel="canonical" href="https://devsnap001.github.io/cleanpick-legal/privacy">
+  <link rel="canonical" href="https://devsnap001.github.io/CleanPick/privacy">
   <style>
     :root {
       color-scheme: light dark;
@@ -49,7 +49,7 @@
 <body>
   <main>
     <h1>CleanPick Privacy Policy</h1>
-    <p class="updated">Last updated: October 1, 2026</p>
+    <p class="updated">Last updated: October 7, 2026</p>
 
     <p>CleanPick is a privacy-first iOS app for safe photo and video cleanup. This policy explains how CleanPick handles information in the first release.</p>
 
@@ -81,15 +81,18 @@
     </ul>
     <p>Photo organization data, protection choices, cleanup decisions, thumbnail hashes, file-size estimates, and cleanup reports are stored locally on your device.</p>
     <p>CleanPick does not send this cleanup data to a CleanPick server.</p>
+    <p>CleanPick also stores your Smart Album conditions, your pinned albums and tags, and image sharpness measurements it uses to suggest which photo to keep, all on your device. None of this is sent to a CleanPick server.</p>
 
     <h2>Photo Titles and Tags</h2>
     <p>Photo titles and tags you add are stored only in CleanPick on your device. They are not written to your photos and are removed if you delete CleanPick, unless a backup described below keeps a copy.</p>
     <p>If you choose Back Up Tags, CleanPick saves a file with your photo titles and tags to a location you pick, such as iCloud Drive. The file stays under your control, CleanPick does not upload it, and Restore Tags reads it back on your device.</p>
     <p>With Back Up Automatically, which is on by default, CleanPick also keeps a copy of your photo titles and tags in your own iCloud Drive, in CleanPick's app folder, so they can be restored after you reinstall CleanPick. The copy stays in your iCloud account, never on a CleanPick server, and the CleanPick developer cannot read it. You can turn it off in Settings.</p>
     <p>On iOS 27 and later, CleanPick also adds each tag as a keyword in your Photos library (Also Save Tags as Photos Keywords, on by default; you can turn it off in Settings). Keywords may sync through iCloud Photos, and CleanPick never changes keywords you added in Photos.</p>
+    <p>If you turn on Keep a Copy as Photos Albums (off by default), CleanPick creates one album per tag in a Photos folder named CleanPick Tags. Those albums are ordinary Photos albums, so they may sync through iCloud Photos, and turning the setting off leaves them in place. CleanPick never deletes a photo to do this.</p>
 
     <h2>Analytics</h2>
     <p>CleanPick uses Firebase Analytics for coarse product usage events. Analytics events do not include photo identifiers, album names, file names, titles, tags, search text, thumbnails, location, EXIF data, or other photo-derived metadata.</p>
+    <p>These events cover steps such as onboarding pages, which tab you open, which cleanup and organize features you use, and purchase outcomes. Firebase Analytics also receives a few coarse properties: whether you have Pro and which plan, your Photos access level, a size range for your library, and how many protection rules are on.</p>
     <p>CleanPick does not use Firebase Analytics for advertising tracking and does not use the Identifier for Advertisers.</p>
     <p>You can turn off usage analytics at any time in CleanPick Settings with Share Usage Analytics.</p>
 
@@ -99,7 +102,10 @@
     <p>CleanPick does not sell personal information.</p>
 
     <h2>Purchases</h2>
-    <p>If you use CleanPick Pro, Apple processes purchases and subscription management through StoreKit. CleanPick reads entitlement status from Apple to unlock Pro features.</p>
+    <p>If you use CleanPick Pro, Apple processes purchases and subscription management through StoreKit. CleanPick reads entitlement status from Apple to unlock Pro features. Offer codes are redeemed through Apple's own redemption screen, and CleanPick only sees the resulting entitlement.</p>
+
+    <h2>Shortcuts and Quick Actions</h2>
+    <p>Pinned albums and tags can appear in Home Screen quick actions and in Shortcuts and Siri on your device. This stays on your device.</p>
 
     <h2>Support</h2>
     <p>If you contact support, your email app sends the message you choose to send. Use devsnap.001@gmail.com for privacy or support questions.</p>
