@@ -44,6 +44,13 @@
       margin-top: 0;
       color: GrayText;
     }
+
+    hr {
+      margin: 48px 0;
+      border: 0;
+      border-top: 1px solid GrayText;
+      opacity: 0.4;
+    }
   </style>
 </head>
 <body>
@@ -112,6 +119,76 @@
 
     <h2>Changes</h2>
     <p>This policy may be updated as CleanPick changes. Material changes should remain consistent with the privacy disclosures in App Store Connect and the in-app Privacy Policy entry.</p>
+    <hr>
+
+    <h1 lang="ko">CleanPick 개인정보 처리방침</h1>
+    <div lang="ko">
+      <p class="updated">최종 수정: 2026년 10월 7일</p>
+
+      <p>CleanPick은 사진과 동영상을 안전하게 정리하는, 개인정보 보호 중심의 iOS 앱입니다. 이 방침은 첫 출시 버전에서 CleanPick이 정보를 어떻게 다루는지 설명합니다.</p>
+
+      <h2>요약</h2>
+      <p>CleanPick은 접근을 허용한 사진·동영상 라이브러리를 기기 안에서 처리하며, 계정이 필요하지 않습니다.</p>
+      <p>CleanPick은 사진 정리를 위한 백엔드 서버를 운영하지 않으며, 정리 스캔을 위해 사진이나 동영상을 업로드하지 않습니다.</p>
+      <p>CleanPick은 Firebase Analytics로 온보딩 완료, 사진 접근 상태, 정리 카테고리 열람, 구매 결과, 구간으로 묶은 정리 개수 같은 대략적인 사용 현황을 파악합니다. 분석 이벤트에는 사진 식별자, 앨범 이름, 파일 이름, 제목, 태그, 검색어, 썸네일, 위치, EXIF 데이터, 해시 등 사진에서 나온 정보가 포함되지 않습니다.</p>
+
+      <h2>사진 접근</h2>
+      <p>CleanPick은 사용자가 선택한 기능에만 사진 접근 권한을 사용합니다. 예를 들면 다음과 같습니다.</p>
+      <ul>
+        <li>정리 카테고리 스캔</li>
+        <li>썸네일과 표시용 이미지 보여 주기</li>
+        <li>중요한 항목 보호</li>
+        <li>Apple 사진의 앨범과 폴더 정리</li>
+        <li>삭제 검토를 위한 삭제 표시</li>
+        <li>iOS 사진 삭제 확인 절차를 통한 최종 삭제 요청</li>
+      </ul>
+      <p>사진 접근을 일부만 허용한 경우 CleanPick은 사용자가 허용한 항목만 다룰 수 있습니다. 사진 접근 권한은 iOS 설정에서 언제든 바꿀 수 있습니다.</p>
+
+      <h2>기기에 저장되는 데이터</h2>
+      <p>다음 CleanPick 데이터는 기기에만 저장됩니다.</p>
+      <ul>
+        <li>사진 정리 선택</li>
+        <li>보호 선택</li>
+        <li>정리 결정</li>
+        <li>기기 안에서 그룹을 묶는 데 쓰는 썸네일 해시</li>
+        <li>파일 크기 추정값</li>
+        <li>정리 리포트</li>
+      </ul>
+      <p>사진 정리 데이터, 보호 선택, 정리 결정, 썸네일 해시, 파일 크기 추정값, 정리 리포트는 기기에만 저장됩니다.</p>
+      <p>CleanPick은 이 정리 데이터를 CleanPick 서버로 보내지 않습니다.</p>
+      <p>CleanPick은 스마트 앨범 조건, 고정한 앨범과 태그, 남길 사진을 제안할 때 쓰는 이미지 선명도 측정값도 기기에만 저장합니다. 이 중 어떤 것도 CleanPick 서버로 전송되지 않습니다.</p>
+
+      <h2>사진 제목과 태그</h2>
+      <p>추가한 사진 제목과 태그는 기기의 CleanPick에만 저장됩니다. 사진 자체에는 기록되지 않으며, 아래에 설명하는 백업이 사본을 보관하지 않는 한 CleanPick을 삭제하면 함께 사라집니다.</p>
+      <p>태그 백업을 선택하면 CleanPick은 사진 제목과 태그가 담긴 파일을 iCloud Drive 같은 사용자가 고른 위치에 저장합니다. 이 파일은 사용자가 직접 관리하고, CleanPick이 업로드하지 않으며, 태그 복원은 이 파일을 기기에서 다시 읽어 들입니다.</p>
+      <p>‘자동으로 백업’(기본 켜짐)을 쓰면 CleanPick이 사진 제목과 태그의 사본을 사용자의 iCloud Drive 안 CleanPick 앱 폴더에도 보관하여, CleanPick을 다시 설치한 뒤 복원할 수 있게 합니다. 이 사본은 사용자의 iCloud 계정에만 있으며 CleanPick 서버에는 없고 CleanPick 개발자는 볼 수 없습니다. 설정에서 끌 수 있습니다.</p>
+      <p>iOS 27 이상에서는 CleanPick이 각 태그를 사진 라이브러리의 키워드로도 추가합니다(‘태그를 사진 앱 키워드로도 저장’, 기본 켜짐, 설정에서 끌 수 있음). 키워드는 iCloud 사진을 통해 동기화될 수 있으며, CleanPick은 사용자가 사진 앱에서 직접 추가한 키워드를 바꾸지 않습니다.</p>
+      <p>‘사진 앨범으로 사본 유지’를 켜면(기본 꺼짐) CleanPick이 사진 앱의 ‘CleanPick Tags’ 폴더에 태그마다 앨범 하나를 만듭니다. 이 앨범은 일반 사진 앨범이라 iCloud 사진을 통해 동기화될 수 있고, 설정을 꺼도 그대로 남습니다. CleanPick은 이를 위해 사진을 삭제하지 않습니다.</p>
+
+      <h2>분석</h2>
+      <p>CleanPick은 앱 분석에 Firebase Analytics를 사용합니다. 분석은 제품 사용 이벤트와 Firebase Analytics가 쓰는 기기 식별자로 한정됩니다. CleanPick은 Firebase Analytics를 광고 추적에 쓰지 않으며 광고 식별자(IDFA)를 사용하지 않습니다.</p>
+      <p>이 이벤트는 온보딩 페이지, 열어 본 탭, 사용한 정리·정돈 기능, 구매 결과 같은 단계를 다룹니다. Firebase Analytics는 또한 Pro 보유 여부와 플랜, 사진 접근 수준, 라이브러리 크기 구간, 켜 둔 보호 규칙 수 같은 대략적인 속성을 받습니다.</p>
+      <p>CleanPick 설정의 ‘사용 통계 공유’에서 언제든 사용 통계를 끌 수 있습니다.</p>
+      <p>분석 값은 의도적으로 대략적입니다. 정리 개수와 저장 공간은 구간으로 묶어 보내며, 사진 단위의 정확한 기록이나 미디어 메타데이터는 보내지 않습니다.</p>
+
+      <h2>CleanPick이 하지 않는 일</h2>
+      <p>CleanPick은 OCR을 사용하지 않고, AI 분류를 사용하지 않으며, 이 빌드에서 EXIF 메타데이터를 수정하지 않습니다.</p>
+      <p>CleanPick에는 광고나 앱 추적 투명성(ATT) 추적이 없습니다.</p>
+      <p>CleanPick은 개인정보를 판매하지 않습니다.</p>
+
+      <h2>구매</h2>
+      <p>CleanPick Pro를 이용하면 Apple이 StoreKit을 통해 구매와 구독 관리를 처리합니다. CleanPick은 Pro 기능을 열기 위해 Apple로부터 권한 상태를 읽습니다. 혜택 코드는 Apple의 코드 입력 화면에서 사용하며, CleanPick은 그 결과로 생긴 권한만 확인합니다.</p>
+
+      <h2>단축어와 퀵 액션</h2>
+      <p>고정한 앨범과 태그는 기기의 홈 화면 퀵 액션과 단축어, Siri에 나타날 수 있습니다. 이 정보는 기기 안에서만 쓰입니다.</p>
+
+      <h2>지원</h2>
+      <p>지원에 문의하면 사용자가 보내기로 한 내용이 메일 앱을 통해 전송됩니다. 개인정보나 지원 관련 문의는 devsnap.001@gmail.com으로 보내 주세요.</p>
+
+      <h2>변경</h2>
+      <p>CleanPick이 바뀌면 이 방침도 갱신될 수 있습니다. 중요한 변경은 App Store Connect의 개인정보 설명 및 앱 안의 개인정보 처리방침 항목과 일관되게 유지됩니다.</p>
+
+    </div>
   </main>
 </body>
 </html>
